@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-10-11 17:03:08.131599 by Eclipse SUMO tlsCoordinator.py v1.27.1
+<configuration>
+    <net-file value="exp.net.xml"/>
+    <output-file value="tls_webster_coord.add.xml"/>
+    <route-file value="TMPDIR/grid_veh_s11_clean.rou.xml"/>
+    <additional-file value="tls_webster.add.xml"/>
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <tlLogic id="nt1" type="static" programID="a" offset="177.85"/>
+    <tlLogic id="nt10" type="static" programID="a" offset="144.29"/>
+    <tlLogic id="nt11" type="static" programID="a" offset="103.53"/>
+    <tlLogic id="nt12" type="static" programID="a" offset="112.13"/>
+    <tlLogic id="nt13" type="static" programID="a" offset="132.73"/>
+    <tlLogic id="nt14" type="static" programID="a" offset="123.33"/>
+    <tlLogic id="nt15" type="static" programID="a" offset="114.73"/>
+    <tlLogic id="nt16" type="static" programID="a" offset="83.16"/>
+    <tlLogic id="nt17" type="static" programID="a" offset="63.76"/>
+    <tlLogic id="nt18" type="static" programID="a" offset="60.36"/>
+    <tlLogic id="nt19" type="static" programID="a" offset="64.96"/>
+    <tlLogic id="nt2" type="static" programID="a" offset="186.25"/>
+    <tlLogic id="nt20" type="static" programID="a" offset="84.56"/>
+    <tlLogic id="nt21" type="static" programID="a" offset="50.80"/>
+    <tlLogic id="nt22" type="static" programID="a" offset="35.20"/>
+    <tlLogic id="nt23" type="static" programID="a" offset="11.60"/>
+    <tlLogic id="nt24" type="static" programID="a" offset="0.00"/>
+    <tlLogic id="nt25" type="static" programID="a" offset="-7.60"/>
+    <tlLogic id="nt3" type="static" programID="a" offset="166.65"/>
+    <tlLogic id="nt4" type="static" programID="a" offset="145.05"/>
+    <tlLogic id="nt5" type="static" programID="a" offset="132.45"/>
+    <tlLogic id="nt6" type="static" programID="a" offset="123.89"/>
+    <tlLogic id="nt7" type="static" programID="a" offset="107.49"/>
+    <tlLogic id="nt8" type="static" programID="a" offset="122.09"/>
+    <tlLogic id="nt9" type="static" programID="a" offset="124.69"/>
+</additional>

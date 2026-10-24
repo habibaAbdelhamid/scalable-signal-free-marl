@@ -1,0 +1,10 @@
+<routes>
+  <vType id="ai_vehicle" vClass="passenger" color="0,0,255" accel="2.6" decel="8.0" emergencyDecel="9.0" sigma="0.0" length="4.5" maxSpeed="16.67" minGap="2.0"/>
+  <vehicle id="ai_lead" type="ai_vehicle" depart="5.00" departLane="3" departSpeed="max">
+    <route edges="north_to_center center_to_east"/>
+    <stop lane="north_to_center_3" endPos="100" duration="6"/>
+  </vehicle>
+  <vehicle id="ai_follow" type="ai_vehicle" depart="6.50" departLane="3" departSpeed="max">
+    <route edges="north_to_center center_to_south"/>
+  </vehicle>
+</routes>

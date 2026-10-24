@@ -1,0 +1,15 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+  <vType id="ai_vehicle" vClass="passenger" color="0,0,255" accel="2.6" decel="8.0" emergencyDecel="9.0" sigma="0.0" length="4.5" maxSpeed="16.67" minGap="2.0"/>
+  <flow id="ai0" type="ai_vehicle" from="np10_nt25" to="nt21_np16" begin="0" end="600" vehsPerHour="420" departLane="best" departSpeed="max"/>
+  <flow id="ai1" type="ai_vehicle" from="np12_nt24" to="nt2_np2" begin="0" end="600" vehsPerHour="420" departLane="best" departSpeed="max"/>
+  <flow id="ai2" type="ai_vehicle" from="np13_nt23" to="nt3_np3" begin="0" end="600" vehsPerHour="420" departLane="best" departSpeed="max"/>
+  <flow id="ai3" type="ai_vehicle" from="np14_nt22" to="nt4_np4" begin="0" end="600" vehsPerHour="420" departLane="best" departSpeed="max"/>
+  <flow id="ai4" type="ai_vehicle" from="np16_nt21" to="nt5_np6" begin="0" end="600" vehsPerHour="420" departLane="best" departSpeed="max"/>
+  <flow id="ai5" type="ai_vehicle" from="np18_nt11" to="nt15_np8" begin="0" end="600" vehsPerHour="420" departLane="best" departSpeed="max"/>
+  <flow id="ai6" type="ai_vehicle" from="np20_nt1" to="nt25_np10" begin="0" end="600" vehsPerHour="420" departLane="best" departSpeed="max"/>
+  <flow id="ai7" type="ai_vehicle" from="np2_nt2" to="nt22_np14" begin="0" end="600" vehsPerHour="420" departLane="best" departSpeed="max"/>
+  <flow id="ai8" type="ai_vehicle" from="np3_nt3" to="nt23_np13" begin="0" end="600" vehsPerHour="420" departLane="best" departSpeed="max"/>
+  <flow id="ai9" type="ai_vehicle" from="np4_nt4" to="nt24_np12" begin="0" end="600" vehsPerHour="420" departLane="best" departSpeed="max"/>
+  <flow id="ai10" type="ai_vehicle" from="np6_nt5" to="nt1_np20" begin="0" end="600" vehsPerHour="420" departLane="best" departSpeed="max"/>
+  <flow id="ai11" type="ai_vehicle" from="np8_nt15" to="nt11_np18" begin="0" end="600" vehsPerHour="420" departLane="best" departSpeed="max"/>
+</routes>

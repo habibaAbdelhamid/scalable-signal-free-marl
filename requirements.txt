@@ -1,0 +1,14 @@
+# Reference environment: Python 3.10. Direct imports of this code and of the Networked-MB-MARL modules it loads.
+torch==2.1.2
+numpy==1.24.4
+gym==0.26.2
+eclipse-sumo==1.27.1
+libsumo==1.27.1
+sumolib==1.27.1
+traci==1.27.1
+lxml==6.0.1
+tqdm==4.67.1
+ipdb==0.13.13
+tensorboard==2.14.1
+# wandb: imported at module level by the framework's algorithms/utils.py; not installed in the reference environment, so no pinned version.
+wandb

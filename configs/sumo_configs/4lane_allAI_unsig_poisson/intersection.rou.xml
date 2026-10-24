@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+  <vType id="ai_vehicle" vClass="passenger" color="0,0,255" accel="2.6" decel="8.0" emergencyDecel="9.0" sigma="0.0" length="4.5" maxSpeed="16.67" minGap="2.0"/>
+  <flow id="ai_north" type="ai_vehicle" begin="0" end="360000" period="exp(0.26786)" departLane="random" departSpeed="max">
+    <routeDistribution>
+      <route probability="0.4" edges="north_to_center center_to_south"/>
+      <route probability="0.3" edges="north_to_center center_to_east"/>
+      <route probability="0.3" edges="north_to_center center_to_west"/>
+    </routeDistribution>
+  </flow>
+  <flow id="ai_south" type="ai_vehicle" begin="0" end="360000" period="exp(0.26786)" departLane="random" departSpeed="max">
+    <routeDistribution>
+      <route probability="0.4" edges="south_to_center center_to_north"/>
+      <route probability="0.3" edges="south_to_center center_to_east"/>
+      <route probability="0.3" edges="south_to_center center_to_west"/>
+    </routeDistribution>
+  </flow>
+  <flow id="ai_east" type="ai_vehicle" begin="0" end="360000" period="exp(0.26786)" departLane="random" departSpeed="max">
+    <routeDistribution>
+      <route probability="0.4" edges="east_to_center center_to_west"/>
+      <route probability="0.3" edges="east_to_center center_to_north"/>
+      <route probability="0.3" edges="east_to_center center_to_south"/>
+    </routeDistribution>
+  </flow>
+  <flow id="ai_west" type="ai_vehicle" begin="0" end="360000" period="exp(0.26786)" departLane="random" departSpeed="max">
+    <routeDistribution>
+      <route probability="0.4" edges="west_to_center center_to_east"/>
+      <route probability="0.3" edges="west_to_center center_to_north"/>
+      <route probability="0.3" edges="west_to_center center_to_south"/>
+    </routeDistribution>
+  </flow>
+</routes>

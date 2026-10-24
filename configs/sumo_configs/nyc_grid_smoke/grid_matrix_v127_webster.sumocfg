@@ -1,0 +1,9 @@
+<configuration>
+  <input>
+    <net-file value="exp_v127.net.xml"/>
+    <route-files value="ai_grid_turns_poisson.rou.xml"/>
+    <additional-files value="tls_webster.add.xml"/>
+  </input>
+  <time><begin value="0"/><end value="3600"/></time>
+  <!-- RINENG revision: exp.net.xml (SUMO 1.9) re-processed with netconvert 1.28 (plain, no options): road lanes and signal programs identical; adds 50 junction-internal lanes (internal waiting positions) whose absence made SUMO default drivers collide inside junctions. -->
+</configuration>

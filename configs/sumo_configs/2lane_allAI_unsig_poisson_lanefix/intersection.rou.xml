@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+  <!-- 2-LANE VERSION of the lanefix benchmark (rates x 2/4 = same demand per lane; left turns -> lane 1). Original note - LANEFIX: identical total Poisson demand (exp(0.26786)/arm, 40% straight / 30% right / 30% left),
+       thinned into per-turn streams with departLane matched to the turn connections:
+       right -> lane 0, left -> lane 3, straight -> random (all lanes connect straight).
+       Removes the wrong-lane wall artifact by construction. -->
+  <vType id="ai_vehicle" vClass="passenger" color="0,0,255" accel="2.6" decel="8.0" emergencyDecel="9.0" sigma="0.0" length="4.5" maxSpeed="16.67" minGap="2.0"/>
+  <flow id="ai_north" type="ai_vehicle" begin="0" end="360000" period="exp(0.053572)" departLane="random" departSpeed="max">
+    <route edges="north_to_center center_to_south"/>
+  </flow>
+  <flow id="ai_northR" type="ai_vehicle" begin="0" end="360000" period="exp(0.040179)" departLane="0" departSpeed="max">
+    <route edges="north_to_center center_to_west"/>
+  </flow>
+  <flow id="ai_northL" type="ai_vehicle" begin="0" end="360000" period="exp(0.040179)" departLane="1" departSpeed="max">
+    <route edges="north_to_center center_to_east"/>
+  </flow>
+  <flow id="ai_south" type="ai_vehicle" begin="0" end="360000" period="exp(0.053572)" departLane="random" departSpeed="max">
+    <route edges="south_to_center center_to_north"/>
+  </flow>
+  <flow id="ai_southR" type="ai_vehicle" begin="0" end="360000" period="exp(0.040179)" departLane="0" departSpeed="max">
+    <route edges="south_to_center center_to_east"/>
+  </flow>
+  <flow id="ai_southL" type="ai_vehicle" begin="0" end="360000" period="exp(0.040179)" departLane="1" departSpeed="max">
+    <route edges="south_to_center center_to_west"/>
+  </flow>
+  <flow id="ai_east" type="ai_vehicle" begin="0" end="360000" period="exp(0.053572)" departLane="random" departSpeed="max">
+    <route edges="east_to_center center_to_west"/>
+  </flow>
+  <flow id="ai_eastR" type="ai_vehicle" begin="0" end="360000" period="exp(0.040179)" departLane="0" departSpeed="max">
+    <route edges="east_to_center center_to_north"/>
+  </flow>
+  <flow id="ai_eastL" type="ai_vehicle" begin="0" end="360000" period="exp(0.040179)" departLane="1" departSpeed="max">
+    <route edges="east_to_center center_to_south"/>
+  </flow>
+  <flow id="ai_west" type="ai_vehicle" begin="0" end="360000" period="exp(0.053572)" departLane="random" departSpeed="max">
+    <route edges="west_to_center center_to_east"/>
+  </flow>
+  <flow id="ai_westR" type="ai_vehicle" begin="0" end="360000" period="exp(0.040179)" departLane="0" departSpeed="max">
+    <route edges="west_to_center center_to_south"/>
+  </flow>
+  <flow id="ai_westL" type="ai_vehicle" begin="0" end="360000" period="exp(0.040179)" departLane="1" departSpeed="max">
+    <route edges="west_to_center center_to_north"/>
+  </flow>
+</routes>
