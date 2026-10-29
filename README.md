@@ -29,3 +29,7 @@ This repository is a code-only snapshot extracted from our private development r
 
    The code looks for the framework in `third_party/Networked-MB-MARL`; set `DMPO_FRAMEWORK_PATH` to use another location.
 3. Run from the repository root with `PYTHONPATH=.`. Each file in `configs/runs/` gives the command line in its header and the environment variables to export.
+
+## Licence
+
+Our code is released under the MIT licence (see `LICENSE`). The licence covers our changes in `third_party/networked_mb_marl.patch`, not the Networked-MB-MARL framework itself; the framework, including the unchanged lines the patch shows as context, remains under its authors' terms.
