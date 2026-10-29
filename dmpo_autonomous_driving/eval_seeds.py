@@ -63,11 +63,15 @@ FRONTIER_CONFIRM_SEEDS = frozenset({4003, 4019, 4027, 4049, 4051, 4057, 4073, 40
                                     4099, 4111, 4127, 4129, 4133, 4139, 4153, 4157, 4159, 4177})
 FRESH_CONFIRM_SEEDS = frozenset({7103, 7121, 7139, 7157, 7211, 7229,
                                  7247, 7265, 7321, 7339, 7357, 7411})
+# FRESH tier of the operating benchmark (4lane_allAI_unsig_poisson_lanefix), pre-registered
+# 2026-08-08 before any run on these seeds.
+LANEFIX_FRESH_SEEDS = frozenset({4102, 4211, 4303, 4409, 4517, 4622, 4731, 4808, 4913, 5021,
+                                 5137, 5248})
 # RARE-EVENT tier (pre-registered 2026-10-16, before any cell ran): the first
 # 100 primes above 5000, single-junction, report-only (never used for selection). The 5xxx
 # family is unused by every other tier and by the training seed-cycle ranges.
 # Correction 2026-10-17: seed 5021 also appears in the lanefix fresh-tier list
-# (lanefix pre-registration record, never added to this file), so 99 of the 100
+# (LANEFIX_FRESH_SEEDS; added to this file 2026-10-29), so 99 of the 100
 # seeds are new; 5021 is kept (the set is report-only) and the overlap is disclosed.
 # SENSING-ROBUSTNESS tier (pre-registered 2026-10-17, before any cell ran):
 # the first 20 primes above 6000 (6007..6163), report-only.
